@@ -60,7 +60,6 @@ for data in all_data:
     data.loc[(data['Fare'] > 7.91) & (data['Fare'] <= 14.454), 'Fare'] = 1
     data.loc[(data['Fare'] > 14.454) & (data['Fare'] <= 31), 'Fare']   = 2
     data.loc[ data['Fare'] > 31, 'Fare']                               = 3
-    data['Fare'] = data['Fare'].astype(int)
 
     #Mapping Age
     data.loc[ data['Age'] <= 16, 'Age']                       = 0
