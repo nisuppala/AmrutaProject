@@ -8,11 +8,6 @@ pickle_in = open('classifier.pkl', 'rb')
 classifier = pickle.load(pickle_in)
 
 
-def welcome():
-    return 'welcome all'
-
-
-
 # defining the function
 def prediction(pclass, sex, age, sibsb, parch, fare, embark, deck):
     prediction = classifier.predict([[pclass, sex, age, sibsb, parch, fare, embark, deck]])
