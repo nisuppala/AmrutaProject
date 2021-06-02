@@ -2,7 +2,6 @@ import pandas as pd
 import numpy as np
 import pickle
 import streamlit as st
-from sklearn.tree import DecisionTreeClassifier
 
 # loading in the model to predict on the data
 pickle_in = open('classifier.pkl', 'rb')
