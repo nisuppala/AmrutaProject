@@ -79,10 +79,10 @@ def main():
     # and store it in the variable result
     if st.button("GO"):
         result = prediction(pclass, sex, age, sibsb, parch, fare, embark, deck)
-    if result == 1:
-        st.subheader('Passenger would have survived :smile:')
-    else:
-        st.subheader('Passenger would not have survived :cry:')
+        if result == 1:
+            st.subheader('Passenger would have survived :smile:')
+        else:
+            st.subheader('Passenger would not have survived :cry:')
 
 
 
