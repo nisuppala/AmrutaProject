@@ -82,7 +82,7 @@ def main():
     if result == 1:
         st.subheader('Passenger would have survived :smile')
     else:
-        st.subheader('Passenger would not have survived.')
+        st.subheader('Passenger would not have survived :cry')
 
 
 
