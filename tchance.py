@@ -22,8 +22,8 @@ def main():
     pclass = st.selectbox('Passenger Class', ('1', '2', '3'))
     st.write('Passenger Class:', pclass)
 
-    sex = st.radio('Gender', ['male', 'female'])
-    if sex == 'male':
+    sex = st.radio('Gender', ['Male', 'Female'])
+    if sex == 'Male':
         sex = 0
     else:
         sex = 1
