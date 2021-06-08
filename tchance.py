@@ -42,12 +42,12 @@ def main():
 
     embark = st.selectbox('Port of Embarkation', ('Cherbourg', 'Queenstown', 'Southampton'))
     st.write('Port of Embarkation:', embark)
-    if sex == 'Cherbourg':
+    if embark == 'Cherbourg':
         embark = 0
-    elif sex == 'Queenstown':
+    elif embark == 'Queenstown':
         embark = 1
     else:
-        embark =2
+        embark = 2
 
     deck = st.selectbox('Residence Deck', ('A', 'B', 'C', 'D', 'E', 'F', 'G', 'T', 'U'))
     st.write('Residence Deck:', deck)
