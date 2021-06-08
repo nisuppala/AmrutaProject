@@ -24,9 +24,9 @@ def main():
 
     sex = st.radio('Gender', ['Male', 'Female'])
     if sex == 'Male':
-        sex = 0
-    else:
         sex = 1
+    else:
+        sex = 0
 
     age = st.slider('Age')
     st.write('Age:', age)
